@@ -32,14 +32,12 @@ using namespace std;
     }
     cout<<endl;
   }
-// return;
+
   delete myGrid;
 }
 
-// };
-
-int main(int argc, char const *argv[]) {
-  Board *b = new Board();
-  b->createMap(10,7);
-  return 0;
-}
+// int main(int argc, char const *argv[]) {
+//   Board *b = new Board();
+//   b->createMap(10,7);
+//   return 0;
+// }
