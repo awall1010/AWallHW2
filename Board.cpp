@@ -2,20 +2,22 @@
 using namespace std;
 #include "Board.h"
 
-// class Board{
-  // int numRows, numColumns;
-// public:
+
   Board::Board(){
 
   }
 
+  Board::~Board(){
+  }
 
-  void Board::createMap(int r, int c, float d){
+
+  char **Board::createMap(int r, int c, float d){
   numRows = r;
   numColumns = c;
   density = d;
   double a = 0;
   int counter = 0;
+
   int maxValue = d*(numRows*numColumns);
 
   char** myGrid;
@@ -27,6 +29,10 @@ using namespace std;
   for(int i = 0; i < numRows; ++i){
     for(int j = 0; j < numColumns;++j){
       a = ((double) rand() / (RAND_MAX));
+      // int  r;
+
+      // cout<<"A: "<<a<<endl;
+
       if(a<d && counter<maxValue){
         myGrid[i][j]='X';
         counter++;
@@ -46,12 +52,18 @@ using namespace std;
     }
     cout<<endl;
   }
-
+  return myGrid;
   delete myGrid;
 }
 
-int main(int argc, char const *argv[]) {
-  Board *b = new Board();
-  b->createMap(10,7,.5);
-  return 0;
+
+void normalMode(char **myGrid){
+
 }
+
+//
+// int main(int argc, char const *argv[]) {
+//   Board *b = new Board();
+//   b->createMap(10,7,.5);
+//   return 0;
+// }
