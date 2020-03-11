@@ -6,6 +6,7 @@ using namespace std;
 class GameMode : public Board{
 public:
   GameMode();
+  // GameMode()
   ~GameMode();
   int numRows;
   int numColumns;
