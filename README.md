@@ -1,6 +1,6 @@
 # AWallHW2
 # Aidan Wall and Macy Werner
-# Student ID: Aidan's 
+# Student ID: 2317537 
 # Student ID: 2327782
 # Sources:
 # https://www.geeksforgeeks.org/convert-string-char-array-cpp/ - help with strings to char array
